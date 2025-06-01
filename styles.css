@@ -1,0 +1,240 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #F8F8F8;
+  color: #333333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1A237E;
+  color: #F8F8F8;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 0.3rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0 0.5rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #B0B0B0;
+}
+
+nav a {
+  color: #1A237E;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #D4AF37;
+}
+
+.resume-btn {
+  color: #D4AF37 !important;
+  border: 1px solid #D4AF37;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #D4AF37;
+  color: white !important;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  color: #1A237E;
+  border-bottom: 2px solid #B0B0B0;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #333333;
+}
+
+a {
+  color: #1A237E;
+  text-decoration: underline;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills-list li {
+  background-color: #1A237E;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #D4AF37;
+  color: #1A237E;
+  cursor: default;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Timeline Styles */
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.timeline {
+  border-left: 3px solid #D4AF37; /* soft gold */
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.timeline-event::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #D4AF37; /* soft gold dot */
+  border-radius: 50%;
+  border: 3px solid #1A237E; /* dark blue */
+  box-sizing: content-box;
+}
+
+.timeline-event .date {
+  font-weight: 700;
+  color: #D4AF37;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: 'Merriweather', serif;
+}
+
+.timeline-event h3 {
+  margin: 0 0 0.3rem 0;
+  color: #1A237E;
+  font-family: 'Lato', sans-serif;
+}
+
+.timeline-event p {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #4a4a4a;
+}
+
+/* Projects */
+#projects article {
+  background: white;
+  border: 1px solid #B0B0B0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+/* Contact */
+#contact a {
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  background-color: #fff;
+  color: #777;
+  border-top: 1px solid #B0B0B0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  .skills-list {
+    justify-content: center;
+  }
+  
+  /* Timeline responsive tweaks */
+  .timeline {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .timeline-event::before {
+    left: auto;
+    right: 0;
+  }
+}
