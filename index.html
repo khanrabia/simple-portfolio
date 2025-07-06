@@ -13,103 +13,541 @@
   <h1>Rabia Khan</h1>
   <p>Multidisciplinary Maker | Bridging Tech, Story &amp; People</p>
   <nav>
-    <a href="#about">About Me</a>
+    <!-- <a href="#about">About Me</a>
     <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
+    <a href="#acadium-work">Acadium Work</a>
     <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
     <a href="#volunteer">Volunteer</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact">Contact</a> -->
     <a href="RabiaKhan_Resume.pdf" class="resume-btn" download>Download Resume</a>
   </nav>
 </header>
 
 <main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm Rabia Khan, a passionate multidisciplinary professional blending technology, storytelling, and leadership. I thrive balancing multiple roles and enjoy crafting creative solutions that make an impact.
-    </p>
-  </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="timeline-container">
-      <div class="timeline">
-        <div class="timeline-event">
-          <span class="date">2024 - Present</span>
-          <h3>Program Success Management Intern</h3>
-          <p>City Tutors — Managing projects, coordinating tutors and students to improve program outcomes.</p>
+  <div class="tabs" id="main-tabs">
+
+    <div class="tab-buttons" role="tablist" aria-label="Main sections tabs">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="about" id="tab-about" data-tab="about">About Me</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="experience" id="tab-experience" data-tab="experience">Experience</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="acadium-work" id="tab-acadium-work" data-tab="acadium-work">Acadium Work</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="projects" id="tab-projects" data-tab="projects">Projects</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="skills" id="tab-skills" data-tab="skills">Skills</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="education" id="tab-education" data-tab="education">Education</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="certifications" id="tab-certifications" data-tab="certifications">Certifications</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="volunteer" id="tab-volunteer" data-tab="volunteer">Volunteer</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="contact" id="tab-contact" data-tab="contact">Contact</button>
+    </div>
+
+    <!-- About Me -->
+    <section id="about" class="tab-content active" role="tabpanel" aria-labelledby="tab-about" tabindex="0">
+      <p>I'm Rabia Khan, a passionate multidisciplinary professional blending technology, storytelling, and leadership. I thrive balancing multiple roles and enjoy crafting creative solutions that make an impact.</p>
+    </section>
+
+    <!-- Experience with nested tabs -->
+    <section id="experience" class="tab-content" role="tabpanel" aria-labelledby="tab-experience" tabindex="0">
+      <div class="nested-tabs" id="experience-tabs">
+        <div class="tab-buttons" role="tablist" aria-label="Experience roles tabs">
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="exp-career-coach" id="tab-exp-career-coach" data-tab="exp-career-coach">Career Coach</button>
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="exp-digital-marketing" id="tab-exp-digital-marketing" data-tab="exp-digital-marketing">Digital Marketing Apprentice</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="exp-scrum-master" id="tab-exp-scrum-master" data-tab="exp-scrum-master">Scrum Master</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="exp-software-engineer" id="tab-exp-software-engineer" data-tab="exp-software-engineer">Software Engineer</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="exp-education-intern" id="tab-exp-education-intern" data-tab="exp-education-intern">Education Intern</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="exp-event-assistant" id="tab-exp-event-assistant" data-tab="exp-event-assistant">Event Assistant</button>
         </div>
-        <div class="timeline-event">
-          <span class="date">2021 - 2024</span>
-          <h3>Software Engineer</h3>
-          <p>Weight Watchers — Developed accessibility features and improved checkout UX.</p>
+
+        <div id="exp-career-coach" class="tab-content" role="tabpanel" aria-labelledby="tab-exp-career-coach" tabindex="0">
+          <div class="header-line">
+            <h3>Career Coach/Career Mentor – SEO</h3>
+            <span class="date">Jan 2025 – Present</span>      
         </div>
-        <div class="timeline-event">
-          <span class="date">2018 - 2022</span>
-          <h3>Mentor</h3>
-          <p>Marcy Lab School — Supporting students in STEM projects.</p>
+          <p>A nonprofit organization dedicated to providing educational and career support for underrepresented and underserved students, 
+            <br>helping them achieve professional success through mentorship, internships, and leadership programs.</p>
+              <ul>
+                <li>Provide career guidance and mentorship to students from underrepresented backgrounds pursuing careers in technology.</li>
+                <li>Collaborating with program staff to align mentorship goals with student career tracks, ensuring a tailored and effective experience.</li>
+                <li>Mentored 20+ clients on job search and interview prep.</li>
+                <li>Led mock interviews focused on tech and soft skills.</li>
+              </ul>
+        </div>
+
+        <div id="exp-digital-marketing" class="tab-content active" role="tabpanel" aria-labelledby="tab-exp-digital-marketing" tabindex="0">
+          <div class="header-line">
+            <h3>Digital Marketing Apprentice – Acadium</h3>
+            <span class="date">Oct 2024 – Present</span>
+          </div>
+          <p>An online apprenticeship platform that connects aspiring digital marketers with businesses to gain real-world experience, 
+            <br>offering hands-on training in social media, SEO, content creation, and other marketing skills.</p>          
+            <ul>
+              <li> Wrote ad copy for a research initiative, successfully driving participant recruitment for interviews.</li>
+              <li> Created and managed social media content across platforms, increasing engagement and follower growth by leveraging analytics and
+                aligning with brand voice.</li>
+              <li> Created content aligned with brand voice and UX best practices.</li>
+              <li>Conducted competitor analysis and provided strategic insights for digital growth opportunities.</li>
+              <li>Crafted persuasive and targeted ad copy for a nail fungus clinic research initiative, successfully attracting participants for interviews to
+                support valuable data collection and insights.</li>
+              <li>Generated strategic LinkedIn post ideas to increase brand visibility, grow follower base, and boost engagement.</li>
+            </ul>
+              <!-- Mini Portfolio Carousel -->
+              <div class="mini-portfolio">
+                <h4>Work Samples</h4>
+                <div class="carousel">
+                  <button class="carousel-btn prev" aria-label="Previous">&#10094;</button>
+                  <div class="carousel-track">
+                    <div class="carousel-item">
+                      <h5>Ad Copywriting for Toenail Health Research Recruitment</h5>
+                      <p>This ad was created to recruit volunteers aged 25-65+ who have experienced toenail fungus, 
+                        <br> inviting them to share their stories in quick 10-20 minute remote interviews. 
+                        <br> The goal was to collect valuable insights to inform a new toenail care brand’s development. 
+                        <br> The copy effectively outlined participant criteria, benefits of participation, and a clear call to action, resulting in successful recruitment for the research study.</p>
+                      <a href="docs/Ad For Interview Volunteer.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>Interview Guide for Toenail Fungus Treatment Research</h5>
+                      <p>This comprehensive interview guide was designed to facilitate in-depth conversations with participants dealing with toenail fungus. 
+                        <br> The goal was to understand their personal experiences, treatment preferences, and expectations for clinic services. Covering topics like the impact on daily life, prior treatments, desired care qualities, 
+                        <br> and key decision factors, the guide ensured consistent, insightful interviews to inform the development of a new toenail care brand.</p>
+                      <a href="docs/Interview Guide_ Toenail Fungus Treatment Experiences.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>Social Media Content Series for Reclaimed Colors</h5>
+                      <p>Developed a diverse and engaging 12-post social media campaign to showcase the unique story and craftsmanship behind reclaimed golf ball art. 
+                        <br> Posts included creative storytelling, behind-the-scenes reels, artist features, eco-facts, customer spotlights, 
+                        <br> and decorating tips—all designed to build community, highlight sustainability, and drive audience interaction.</p>
+                      <a href="docs/Reclaimed Colors - Post Ideas.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>Email Marketing Templates for Reclaimed Colors</h5>
+                      <p>Crafted two engaging welcome email templates designed to warmly onboard new subscribers to the Reclaimed Colors community. 
+                        <br> The emails introduce the brand’s unique blend of sustainability and creativity, highlight the founder’s story, and set expectations for exclusive content including eco-friendly design inspiration, behind-the-scenes insights, and special offers. 
+                        <br> These templates help build brand connection and encourage subscriber interaction.</p>
+                      <a href="docs/Reclaimed Colors - Welcome Email Template.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>AI Industry Report & Social Media Content Series</h5>
+                      <p>Developed a comprehensive content series based on the "Trends in Artificial Intelligence" report by Bond Capital, synthesizing key insights into 21 compelling LinkedIn posts. 
+                        <br> The posts highlight critical AI trends such as the rise of AI as the new electricity, the shift to human-first interfaces, data moats, autonomous agents, and the future of AI orchestration and evaluation.
+                        <br>  This series effectively translates complex industry research into digestible, engaging social media narratives aimed at thought leadership and community engagement in AI innovation.</p>
+                      <a href="docs/Linkedin Posts from Trends Artificial Intelligence.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>State of B2B Monetization in 2025 — Content Series</h5>
+                      <p>Created a strategic LinkedIn post series based on the “State of B2B Monetization in 2025” report by Growth Unhinged. 
+                        <br> The series explores evolving pricing models, including the decline of seat-based pricing, the rise of hybrid and outcome-based pricing, and the impact of AI on B2B monetization strategies. 
+                        <br> It highlights industry shifts toward usage-based, hybrid, and outcome-driven models with real-world company examples, 
+                        <br> addressing challenges like pricing transparency and ownership within organizations.</p>
+                      <a href="docs/Linkedin Posts from The state of B2B monetization in 2025.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>AI Fundraising Trends — LinkedIn Post Series</h5>
+                      <p>Developed a compelling LinkedIn content series analyzing key shifts in AI startup fundraising and growth dynamics. 
+                        <br> Topics covered include the steep decline in seed-to-Series A conversions, evolving startup efficiency metrics like ARR per FTE, shrinking option pools due to AI augmentation, 
+                        <br> the dominance of San Francisco in AI capital, changing fundraising timelines, and the rise of outcome- and hybrid-based pricing models. 
+                        <br> The series highlights market realities such as the “sniper market” for AI startups, the breakdown of traditional funding cadences, and new pricing strategies essential for modern AI companies.</p>
+                      <a href="docs/Linkedin Posts from AI Fundraising Trends PPT.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>LinkedIn Content Series</h5>
+                      <p>Created a comprehensive LinkedIn post series analyzing the latest shifts in AI startup fundraising dynamics. 
+                        <br>The series explored how seed-to-Series A conversion rates have plummeted from 40% in 2021 to 15% in 2025, the rise of bridge rounds disguised as Seed+ or Pre-A extensions, soaring pre-money valuations for AI startups, and the stark “sniper market” reality where only startups with undeniable traction secure funding. 
+                        <br> It also covered trends in elongated fundraising timelines, San Francisco’s continued dominance in AI venture capital, the emergence of ultra-lean teams enabled by AI tools, the investor obsession with ARR per FTE as a key metric of efficiency, and the strategic shrinking of option pools to preserve equity. 
+                        <br> The content provided real-world examples of startups successfully navigating this challenging environment, offering founders actionable insights on thriving despite higher investor expectations and a dramatically changed funding landscape.</p>
+                      <a href="docs/LinkedIn Posts.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>7 Mistakes in Digital Transformation — Blog Post</h5>
+                      <p>Authored an in-depth blog post outlining seven common mistakes that derail digital transformation efforts and how organizations can avoid them using Process Tempo’s advanced analytics and rapid application development platform. 
+                        <br> The piece explored pitfalls such as failing to secure cross-departmental buy-in, focusing solely on technology over process optimization, ignoring process metrics, accumulating technical debt through shadow IT, treating transformation as a one-time event instead of a continuous process, neglecting change management, and failing to integrate with legacy systems. 
+                        <br> It provided actionable strategies to foster collaboration, align technology with business goals, and adopt a process-first, data-driven approach that ensures sustainable and successful transformation outcomes.</p>
+                      <a href="docs/Seven Common Mistakes in Digital Transformation, and How to Avoid Them with Process Tempo.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>AI-Powered Low-Code/No-Code Development — Thought Leadership Blog Post</h5>
+                      <p>Authored a comprehensive blog post exploring how Process Tempo is redefining low-code/no-code (LCNC) development by integrating advanced process insights, AI-driven analytics, and unified data modeling. 
+                        <br> The piece detailed how Process Tempo empowers both technical and non-technical users to rapidly build impactful business applications by combining process mining, operational analytics, and AI-powered tools such as intelligent process discovery, natural language interfaces, and automated app generation. It showcased key benefits including accelerated development cycles, cross-functional collaboration, enhanced workflow visibility, and reduced IT backlogs. Real-world use cases highlighted applications in finance, healthcare, IT service management, and compliance. 
+                        <br> The post also addressed considerations for secure, scalable adoption and underscored how Process Tempo exemplifies the future of AI-augmented LCNC platforms, enabling organizations to optimize operations with speed and agility.</p>
+                      <a href="docs/How Process Tempo is Shaping the Future of AI-Powered Low-Code_No-Code Development Exploring the Role of Process Insights in Revolutionizing Software Development.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>Why Speed Alone Won’t Save Your Digital Transformation — Blog Post</h5>
+                      <p>Wrote a comprehensive thought leadership post exploring why rapid application development alone is insufficient for successful digital transformation, emphasizing the need to pair speed with deep process insight and effective change enablement. 
+                        <br> The article detailed common challenges such as overburdened IT, shadow IT, legacy system constraints, and resistance to change. It outlined a smarter, four-phase approach — Discover, Design, Deploy, Optimize — that combines process mapping, collaborative redesign, rapid application development, and continuous improvement. Highlighted key benefits including smarter automation, reduced shadow IT, safer modernization, and sustained performance improvements. 
+                        <br> The post concluded by positioning Process Tempo as the solution for organizations seeking to transform intelligently and measurably, not just faster, with a clear call-to-action inviting readers to start mapping their processes together.</p>
+                      <a href="docs/Why Speed Alone Won’t Save Your Digital Transformation.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <div class="carousel-item">
+                      <h5>Digital Transformation 2025: What’s In, What’s Out — Blog Post</h5>
+                      <p>Authored an in-depth article forecasting the evolving priorities of digital transformation by 2025, highlighting key trends shaping enterprise success.
+                        <br> The post contrasted what’s “In” — such as developing transformational leadership, building AI-ready teams, doubling down on data and AI governance, and expanding security training — with what’s “Out,” including moonshot AI projects lacking clear business drivers, lift-and-shift migrations without process optimization, and unsupported employee adaptation. Provided expert insights into the drivers of modern transformation, from embedding AI agents in workflows to navigating geopolitical complexities. 
+                        <br> Concluded by positioning Process Tempo as a platform that unifies data, empowers adaptive cultures, and accelerates AI-powered innovation through actionable process intelligence and governance, inviting readers to rethink their strategies for 2025.</p>
+                      <a href="docs/Digital Transformation 2025_ What’s In, What’s Out — A Process Tempo Perspective.pdf" download class="btn">Download PDF</a>
+                    </div>
+                    <!-- Add more .carousel-item as needed -->
+                  </div>
+                  <button class="carousel-btn next" aria-label="Next">&#10095;</button>
+                </div>
+              </div>
+              <!-- /Mini Portfolio Carousel -->
+
+
+        </div>
+
+        <div id="exp-scrum-master" class="tab-content" role="tabpanel" aria-labelledby="tab-exp-scrum-master" tabindex="0">
+          <div class="header-line">
+            <h3>Scrum Master – P1 Games</h3>
+            <span class="date">Jun 2024 – Present</span>
+          </div>
+          <p>A gaming company specializing in interactive entertainment experiences, where teams work cross-functionally on game design, 
+            <br>user engagement, and technology solutions for improved gameplay and user satisfaction.</p>
+          <ul>
+            <li>Facilitated Agile ceremonies, including daily stand-ups, sprint planning, retrospectives, and reviews, to ensure efficient team collaboration
+              and alignment.</li>
+            <li>Managed cross-functional projects involving UX, design, QA, and marketing to improve engagement features.</li>
+            <li>Promoted agile principles and team collaboration.</li>
+            <li>Coordinated stakeholder feedback loops, prioritizing tasks aligned with quarterly goals.</li>
+            <li>Managed stakeholder expectations by providing regular updates on project milestones, risks, and resolutions.</li>
+          </ul>
+        </div>
+
+        <div id="exp-software-engineer" class="tab-content" role="tabpanel" aria-labelledby="tab-exp-software-engineer" tabindex="0">
+          <div class="header-line">
+            <h3>Software Engineer – Weight Watchers</h3>
+            <span class="date">Sept 2021 – Jan 2024</span>
+          </div>
+
+          <p>A global wellness and weight management company focused on empowering people to live healthier lives through scientifically backed nutrition 
+            <br>and behavior change programs, supported by digital tools and community engagement.</p>
+          <ul>
+            <li>Built front ends for multiple projects, including accessibility features, subscription flows, account settings, checkout redesign, and
+              self-cancellation features</li>
+            <li>Led and executed accessibility project, adhering to WCAG guidelines, ensuring the site was fully accessible for users with disabilities</li>
+            <li>Worked cross-functionally on accessible user flows.</li>
+            <li>Created detailed technical documentation for other developers in the team and admin audiences, including statements of work, integration
+              documentation, flow charts, and diagrams.</li>
+            <li>Tracked and resolved complex technical issues post-implementation and issues that came up during implementation, ensuring a seamless
+                user experience.</li>
+          </ul>
+        </div>
+
+        <div id="exp-education-intern" class="tab-content" role="tabpanel" aria-labelledby="tab-exp-education-intern" tabindex="0">
+          <div class="header-line">
+            <h3>Education Intern – Park Avenue Armory</h3>
+            <span class="date">Oct 2018 – Jul 2020</span>
+          </div>
+          <p>A renowned New York City cultural institution and nonprofit arts center, known for presenting 
+            <br> unconventional and large-scale performances, exhibitions, and educational programs that engage the local community and schools.</p>
+          <ul>
+            <li>Designed educational materials tailored for K–12 students attending arts-based programs and exhibits.</li>
+            <li>Coordinated logistics for public events and school visits with 400–500 attendees, including supply management and on-site setup.</li>
+            <li>Collaborated with teaching artists to organize and facilitate interactive learning experiences.</li>
+            <li>Conducted research on featured artists and exhibitions to develop accessible learning concepts and contextual guides for students.</li>
+            <li>Managed administrative tasks including maintaining spreadsheets, creating mailing lists, and supporting day-to-day office operations.</li>
+          </ul>
+        </div>
+
+        <div id="exp-event-assistant" class="tab-content" role="tabpanel" aria-labelledby="tab-exp-event-assistant" tabindex="0">
+          <div class="header-line">
+            <h3>Event Assistant – iMentor</h3>
+            <span class="date">Aug 2018 – Aug 2019</span>
+          </div>
+          <p>A nonprofit organization that builds mentoring relationships to empower high school students from low-income communities to 
+            <br> graduate, succeed in college, and achieve their ambitions through guidance and support.</p>
+          <ul>
+            <li>Supported the planning and execution of large-scale events with 600+ mentor and mentee attendees..</li>
+            <li>Handled logistical operations including venue setup, material preparation, and post-event breakdown.</li>
+            <li>Created and distributed tailored resources to help mentors effectively support high school students.</li>
+            <li>Provided administrative support, including data entry, materials coordination, and communication with event stakeholders.</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <div class="timeline-container">
-      <div class="timeline">
-        <div class="timeline-event">
-          <span class="date">2017 - 2021</span>
-          <h3>Bachelor of Business Administration</h3>
-          <p>City College of New York — Major in Management with honors.</p>
-        </div>
+    <!-- Acadium Work Samples -->
+    <section id="acadium-work" class="tab-content" role="tabpanel" aria-labelledby="tab-acadium-work" tabindex="0">
+      <h2>Acadium Work Samples</h2>
+      <article class="work-sample">
+        <p>Acadium is an online apprenticeship platform that connects aspiring digital marketers with real-world projects and mentors to build hands-on experience. Below are select work samples from my Acadium apprenticeship, 
+          <br> including an interactive Canva portfolio for a visual overview and a downloadable zip file containing all project assets for your review.</p>
+      </article>
+      <article class="work-sample">
+        <h3>Concise Portfolio Overview (Canva Version)</h3>
+        <p>This concise portfolio was designed in Canva to showcase key projects and skills in a clean, visual format.</p>
+        <a href="docs/Rabia Khan.pdf" target="_blank" class="btn">View Canva Portfolio</a>
+      </article>
+    
+      <article class="work-sample">
+        <h3>Full Portfolio (ZIP File)</h3>
+        <p>The complete portfolio includes detailed documents, work samples, and project files for an in-depth review.</p>
+        <a href="docs/Acadium-20250706T021105Z-1-001.zip" download class="btn">Download Full Portfolio (ZIP)</a>
+      </article>
+    </section>
+
+    <!-- Projects -->
+   <!-- Project Section -->
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+
+  <div class="project-card">
+    <div class="project-info">
+      <h3>Connect Four</h3>
+      <p class="project-description"> Built an interactive, two-player Connect Four game using HTML, CSS, and JavaScript. 
+        <br> Features a responsive 7x6 grid, turn-based play, win detection, and a reset option. Fully playable in any modern browser.
+      </p>
+      <p class="project-team">Collaborated with one other developer</p>
+      <div class="project-links">
+        <a href="https://khanrabia.github.io/connect-four/" target="_blank" class="btn live-site-btn">View Live Site</a>
+        <a href="https://github.com/khanrabia/connect-four" target="_blank" class="btn github-btn">View Code</a>
       </div>
     </div>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Project Management</li>
-      <li>Agile / Scrum</li>
-      <li>Copywriting</li>
-      <li>Public Speaking</li>
-      <li>UX Design</li>
-      <li>Team Leadership</li>
-    </ul>
-  </section>
+    <div class="project-demo">
+      <video width="640" height="360" controls autoplay loop muted>
+        <source src="assets/connect-four.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>    
+    </div>
+  </div>
+<!--second project-->
+  <div class="project-card">
+    <div class="project-info">
+      <h3>Awesome Project Name</h3>
+      <p class="project-description">
+        This project is a [brief description of the project]. It helps users [what it does, main features, or benefits].
+      </p>
+      <p class="project-team"><strong>Collaborators:</strong> Alice Johnson, Bob Smith, Charlie Lee</p>
+      <div class="project-links">
+        <a href="https://your-live-site-url.com" target="_blank" class="btn live-site-btn">View Live Site</a>
+        <a href="https://github.com/yourusername/your-project" target="_blank" class="btn github-btn">View Code</a>
+      </div>
+    </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3>Embedded Health Tracker</h3>
-      <p>Designed and implemented a wearable device that monitors vital signs in real time using embedded C and IoT integration.</p>
-    </article>
-    <article>
-      <h3>Career Coaching Platform MVP</h3>
-      <p>Built a prototype subscription platform focused on mentorship for Gen Z and BIPOC communities, including user onboarding and content curation.</p>
-    </article>
-  </section>
+    <div class="project-demo">
+      <img src="assets/project-demo.gif" alt="Demo of Awesome Project" class="demo-gif" />
+      <!-- Or use video instead:
+      <video src="assets/project-demo.mp4" controls autoplay loop muted></video> 
+      -->
+    </div>
+  </div>
 
-  <section id="volunteer">
-    <h2>Volunteer</h2>
-    <p>Active volunteer at local education programs and STEM mentorship initiatives supporting underrepresented youth.</p>
-  </section>
+  <!-- Add more .project-card divs for other projects -->
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:rabia.khan@example.com">rabia.khan@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/rabiakhan" target="_blank" rel="noopener">linkedin.com/in/rabiakhan</a></p>
-  </section>
-</main>
 
-<footer>
-  <p>© 2025 Rabia Khan</p>
-</footer>
+    <!-- Skills -->
+    <section id="skills" class="tab-content" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
+      <h3>🛠 Software Engineering</h3>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3 (Flexbox)</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Node.js</li>
+        <li> PostgreSQL,MongoDB (CRUD, schema design basics)</li>
+        <li>RESTful APIs</li>
+        <li>Responsive Design</li>
+        <li>JSON</li>
+        <li>Postman</li>
+        <li>Basic Authentication (JWT, OAuth)</li>
+      </ul>
 
-<script src="index.js"></script>
-</body>
-</html>
+      <h3>🚀 DevOps & Cloud</h3>
+      <ul class="skills-list">
+        <li>AWS</li>
+        <li>Heroku</li>
+        <li>GitLab</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>CLI tools, Bash scripting</li>
+        <li>Docker</li>
+      </ul>
+
+      <h3>📋 Project Management & Agile</h3>
+      <ul class="skills-list">
+        <li>Scrum /li>
+          <li>Kanban</li>
+          <li>Waterfall</li>
+          <li>Backlog Grooming</li>
+          <li>Roadmapping</li>
+          <li>Stakeholder Management/Communication & Cross-functional Collaboration</li>
+          <li>Sprint Planning</li>
+          <li>Daily Standups</li>
+          <li>Retrospectives</li>
+          <li>Backlog Grooming</li>
+          <li>User Stories</li>
+          <li>Roadmapping</li>
+          <li>Issue Tracking</li>
+          <li>Team Facilitation & Servant Leadership</li>
+      </ul>
+
+      <h3>🧰 Tools & Platforms</h3>
+      <ul class="skills-list">
+        <li>Figma</li>
+        <li>Canva</li>
+        <li>Miro</li>
+        <li>Microsoft Office Suite (Excel, Word, PowerPoint, Outlook)</li>
+        <li>Google Workspace, WordPress, Notion</li>
+        <li>Airtable</li>
+        <li>Squarespace</li>
+        <li>Medium</li>
+        <li>Slack</li>
+        <li>Zoom</li>
+        <li>Trello</li>
+        <li>Asana</li>
+        <li>Monday.com</li>
+        <li>ClickUp</li>
+        <li>Jira</li>
+        <li>Confluence</li>
+        <li>GitHub</li>
+      </ul>
+
+      <h3>📈 Marketing & Content</h3>
+      <ul class="skills-list">
+        <li>Ad Copywriting</li>
+        <li>Content Strategy</li>
+        <!-- <li>Social Media Campaigns</li> -->
+        <li>Competitor & Market Research</li>
+        <!-- <li>SEO</li> -->
+        <li>Email Marketing & Newsletters</li>
+        <li>Audience Targeting & Segmentation</li>
+        <li>Content Calendar Planning</li>
+        <li>Linkedin Content Creation</li>
+        <li>Instagram Content Creation</li>
+      </ul>
+      <h3>📑 Documentation</h3>
+      <ul class="skills-list">
+        <li>Technical Writing</li>
+        <li>Flowcharts, Statements of Work (SOWs)</li>
+        <li>User Guides & Manuals</li>
+        <li>Meeting Minutes & Reports</li>
+        <li>Content Organization & Structuring</li>
+        <li>Stakeholder Communication</li>
+      </ul>
+      <h3>🧠 Soft Skills</h3>
+      <ul class="skills-list">
+        <li>Communication (Written & Verbal)</li>
+        <li>Leadership & Mentorship</li>
+        <li>Problem Solving</li>
+        <li>Adaptability</li>
+        <li>Collaboration & Teamwork</li>
+        <li>Time Management</li>
+        <li>Project Planning & Execution</li>
+        <li>Attention to Detail</li>
+        <li>Strategic Thinking</li>
+        <li>Continuous Improvement Mindset</li>
+        <li>Empathy & User-Centered Thinking</li>
+        <li>Initiative & Self-Motivation</li>
+        <li>Conflict Resolution</li>
+        <li>Active Listening</li>
+        <li>Networking & Relationship Building</li>
+        <li>Curiosity & Growth Mindset</li>
+      </ul>
+    </section>
+
+    <!-- Education with nested tabs -->
+    <section id="education" class="tab-content" role="tabpanel" aria-labelledby="tab-education" tabindex="0">
+      <div class="nested-tabs" id="education-tabs">
+        <div class="tab-buttons" role="tablist" aria-label="Education tabs">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="edu-ccny" id="tab-edu-ccny" data-tab="edu-ccny">City College of New York</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="edu-marcy" id="tab-edu-marcy" data-tab="edu-marcy">Marcy Lab School</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="edu-bmcc" id="tab-edu-bmcc" data-tab="edu-bmcc">BMCC</button>
+        </div>
+
+        <div id="edu-ccny" class="tab-content active" role="tabpanel" aria-labelledby="tab-edu-ccny" tabindex="0">
+          <div class="header-line">
+            <h3>City College of New York</h3>
+            <span class="date">Aug 2020 - Jan 2023</span>
+          </div>
+          <p>Bachelor’s in Business Administration & Management</p>
+        </div>
+
+        <div id="edu-marcy" class="tab-content" role="tabpanel" aria-labelledby="tab-edu-marcy" tabindex="0">
+          <div class="header-line">
+            <h3>Marcy Lab School</h3>
+            <span class="date">Sep 2020 - Sep 2021</span>
+          </div>
+          <p>Technical Diploma in Computer Science</p>
+        </div>
+
+        <div id="edu-bmcc" class="tab-content" role="tabpanel" aria-labelledby="tab-edu-bmcc" tabindex="0">
+          <div class="header-line">
+            <h3>Borough of Manhattan Community College</h3>
+            <span class="date">Aug 2018 - May 2020</span>
+          </div>
+          <p>Associates in Computer Science</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications with nested tabs -->
+    <section id="certifications" class="tab-content" role="tabpanel" aria-labelledby="tab-certifications" tabindex="0">
+      <div class="nested-tabs" id="certifications-tabs">
+        <div class="tab-buttons" role="tablist" aria-label="Certification tabs">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="cert-csm" id="tab-cert-csm" data-tab="cert-csm">Certified ScrumMaster</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="cert-acadium" id="tab-cert-acadium" data-tab="cert-acadium">Digital Marketing Apprentice</button>
+        </div>
+
+        <div id="cert-csm" class="tab-content active" role="tabpanel" aria-labelledby="tab-cert-csm" tabindex="0">
+          <h3>Certified ScrumMaster (CSM)</h3>
+          <p>Issued by Scrum Alliance – Demonstrates expertise in Agile project management and scrum principles.</p>
+        </div>
+        <div id="cert-acadium" class="tab-content" role="tabpanel" aria-labelledby="tab-cert-acadium" tabindex="0">
+          <h3>Digital Marketing Apprentice – Acadium</h3>
+          <p>Specialized in SEO, content strategy, and ad copywriting using AI-driven tools.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Volunteer with nested tabs -->
+    <section id="volunteer" class="tab-content" role="tabpanel" aria-labelledby="tab-volunteer" tabindex="0">
+      <div class="nested-tabs" id="volunteer-tabs">
+        <div class="tab-buttons" role="tablist" aria-label="Volunteer tabs">
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="vol-city-tutors" id="tab-vol-city-tutors" data-tab="vol-city-tutors">Mentor – City Tutors</button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="vol-marcy" id="tab-vol-marcy" data-tab="vol-marcy">Mentor – Marcy Lab School</button>
+        </div>
+    
+        <div id="vol-city-tutors" class="tab-content active" role="tabpanel" aria-labelledby="tab-vol-city-tutors" tabindex="0">
+          <h3>Mentor – City Tutors</h3>
+          <p>A volunteer-based nonprofit organization that provides free tutoring and mentorship to underserved college students and adult learners across New York City, aiming to close 
+            <br> achievement gaps and improve career readiness through personalized academic and professional support.</p>
+          <p> Providing Mentoring to college students , since June 2024</p>
+          <ul>
+            <li>Provide career guidance and mentorship to students from underrepresented backgrounds pursuing careers in technology.</li>
+            <li>Led mock interviews focused on tech and soft skills.</li>
+            <li>Mentoring college students pursuing careers in tech, guiding resumes, interviews, and skill development</li>
+            <li> Supporting mentees through job application processes and shared industry insights to build their confidence and readiness.</li>
+          </ul>
+        </div>
+    
+        <div id="vol-marcy" class="tab-content" role="tabpanel" aria-labelledby="tab-vol-marcy" tabindex="0">
+          <h3>Mentor – Marcy Lab School</h3>
+          <p>An innovative, tuition-free alternative to college offering an intensive software engineering fellowship for high-potential young adults from underserved communities, 
+            <br> focused on equipping students with technical skills, professional development, and mentorship to launch successful tech careers.</p>       
+          <p>Mentoring with Marcy Lab School Fellows, since November 2022</p>
+          <ul>
+            <li>Provide career guidance and mentorship to students from underrepresented backgrounds pursuing careers in technology.</li>
+            <li>Collaborating with program staff to align mentorship goals with student career tracks, ensuring a tailored and effective experience.</li>
+            <li>Led mock interviews focused on tech and soft skills.</li>
+            <li>Mentoring a cohort of students pursuing careers in tech, guiding resumes, interviews, and skill development.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="tab-content" role="tabpanel" aria-labelledby="tab-contact" tabindex="0">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:rabia.khan@example.com">rabia.khan@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rabiakhan" target="_blank" rel="noopener">linkedin.com/in/rabiakhan</a></p>
+      <p>GitHub: <a href="https://github.com/rabiakhan" target="_blank" rel="noopener">github.com/rabiakhan</a></p>
+    </section>
+  </div> 
+</main> 
+<footer> 
+  <p>© 2025 Rabia Khan</p> 
+</footer> 
+<script src="index.js"></script> 
+</body> 
+</html> 
