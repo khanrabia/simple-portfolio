@@ -22,7 +22,7 @@
     <a href="#certifications">Certifications</a>
     <a href="#volunteer">Volunteer</a>
     <a href="#contact">Contact</a> -->
-    <a href="RabiaKhan_Resume.pdf" class="resume-btn" download>Download Resume</a>
+    <a href="assets/Rabia Khan.L - Resume.pdf" class="resume-btn" download>Download Resume</a>
   </nav>
 </header>
 
@@ -44,7 +44,21 @@
 
     <!-- About Me -->
     <section id="about" class="tab-content active" role="tabpanel" aria-labelledby="tab-about" tabindex="0">
-      <p>I'm Rabia Khan, a passionate multidisciplinary professional blending technology, storytelling, and leadership. I thrive balancing multiple roles and enjoy crafting creative solutions that make an impact.</p>
+      <div class="photo-container">
+        <div class="photo">
+          <img src="images/IMG_2196.jpeg" alt="Your Portrait">
+        </div>
+      </div>
+      <p>
+        I'm Rabia Khan, a passionate multidisciplinary professional blending technology, storytelling, and leadership.<br>
+        I thrive balancing multiple roles and enjoy crafting creative solutions that make an impact.<br>
+        Certified Scrum Master with a strong background in software engineering, Agile project leadership, digital marketing, and career mentorship.<br>
+        Experienced in leading cross-functional teams, managing complex projects, and delivering user-centered solutions using technologies like JavaScript, Python, and Node.js.<br>
+        Skilled in tools such as Jira, Notion, and Airtable to streamline workflows and drive continuous improvement.<br>
+        Passionate about helping others grow through mentorship and career guidance, while also driving digital growth via SEO and content strategies.<br>
+        Adaptable and collaborative, I bring a versatile skill set and solutions-oriented mindset to every challenge, ready to contribute across technical, managerial, and strategic roles.
+      </p>
+      
     </section>
 
     <!-- Experience with nested tabs -->
@@ -285,56 +299,67 @@
       </article>
     </section>
 
-    <!-- Projects -->
-   <!-- Project Section -->
-<section id="projects" class="projects-section">
-  <h2>My Projects</h2>
+    <section id="projects" class="tab-content" role="tabpanel" aria-labelledby="tab-projects" tabindex="0">
+      <h2>My Projects</h2>
+    
+      <div class="project-grid">
+    
+        <!-- Project 1 -->
+  
+        <div class="project-card">
+          <div class="project-info">
+            <h3>MarcyGram</h3>
+            <p class="project-description">
+              A unique social media platform for the Marcy Lab family that lets users interact without focusing on follower counts or likes. MarcyGram encourages authentic connections by limiting likes and removing visible follower numbers, helping users engage without social pressure.
+            </p>
+            <p class="project-team">Collaborated with one other developer</p>
+            <div class="project-links">
+              <a href="https://github.com/khanrabia/marcyGram" target="_blank" class="btn github-btn">View Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>SocieTeam</h3>
+            <p class="project-description">
+              Community-based application enabling users to create and RSVP to events focused on driving positive social change.
+            </p>
+            <p class="project-team">Collaborated with two other developers</p>
+            <div class="project-links">
+              <a href="https://github.com/khanrabia/SocieTeam" target="_blank" class="btn github-btn">View Code</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
 
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Connect Four</h3>
-      <p class="project-description"> Built an interactive, two-player Connect Four game using HTML, CSS, and JavaScript. 
-        <br> Features a responsive 7x6 grid, turn-based play, win detection, and a reset option. Fully playable in any modern browser.
-      </p>
-      <p class="project-team">Collaborated with one other developer</p>
-      <div class="project-links">
-        <a href="https://khanrabia.github.io/connect-four/" target="_blank" class="btn live-site-btn">View Live Site</a>
-        <a href="https://github.com/khanrabia/connect-four" target="_blank" class="btn github-btn">View Code</a>
+
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Connect Four</h3>
+            <p class="project-description">
+              Built an interactive, two-player Connect Four game using HTML, CSS, and JavaScript.
+              <br>Features a responsive 7x6 grid, turn-based play, win detection, and a reset option. Fully playable in any modern browser.
+            </p>
+            <p class="project-team">Collaborated with one other developer</p>
+            <div class="project-links">
+              <a href="https://khanrabia.github.io/connect-four/" target="_blank" class="btn live-site-btn">View Live Site</a>
+              <a href="https://github.com/khanrabia/connect-four" target="_blank" class="btn github-btn">View Code</a>
+            </div>
+          </div>
+          <div class="project-demo">
+            <video controls autoplay loop muted>
+              <source src="assets/connect-four.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+    
       </div>
-    </div>
-
-    <div class="project-demo">
-      <video width="640" height="360" controls autoplay loop muted>
-        <source src="assets/connect-four.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>    
-    </div>
-  </div>
-<!--second project-->
-  <div class="project-card">
-    <div class="project-info">
-      <h3>Awesome Project Name</h3>
-      <p class="project-description">
-        This project is a [brief description of the project]. It helps users [what it does, main features, or benefits].
-      </p>
-      <p class="project-team"><strong>Collaborators:</strong> Alice Johnson, Bob Smith, Charlie Lee</p>
-      <div class="project-links">
-        <a href="https://your-live-site-url.com" target="_blank" class="btn live-site-btn">View Live Site</a>
-        <a href="https://github.com/yourusername/your-project" target="_blank" class="btn github-btn">View Code</a>
-      </div>
-    </div>
-
-    <div class="project-demo">
-      <img src="assets/project-demo.gif" alt="Demo of Awesome Project" class="demo-gif" />
-      <!-- Or use video instead:
-      <video src="assets/project-demo.mp4" controls autoplay loop muted></video> 
-      -->
-    </div>
-  </div>
-
-  <!-- Add more .project-card divs for other projects -->
-</section>
-
+    </section>
+    
+    
 
     <!-- Skills -->
     <section id="skills" class="tab-content" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
@@ -539,9 +564,9 @@
     <!-- Contact -->
     <section id="contact" class="tab-content" role="tabpanel" aria-labelledby="tab-contact" tabindex="0">
       <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:rabia.khan@example.com">rabia.khan@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/rabiakhan" target="_blank" rel="noopener">linkedin.com/in/rabiakhan</a></p>
-      <p>GitHub: <a href="https://github.com/rabiakhan" target="_blank" rel="noopener">github.com/rabiakhan</a></p>
+      <p>Email: <a href="mailto:khan.rab34@gmail.com">khan.rab34@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/rabia-l-khan/" target="_blank" rel="noopener">https://www.linkedin.com/in/rabia-l-khan/</a></p>
+      <p>GitHub: <a href="https://github.com/khanrabia" target="_blank" rel="noopener">https://github.com/khanrabia</a></p>
     </section>
   </div> 
 </main> 
