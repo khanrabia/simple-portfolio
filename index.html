@@ -509,21 +509,40 @@
     <!-- Certifications with nested tabs -->
     <section id="certifications" class="tab-content" role="tabpanel" aria-labelledby="tab-certifications" tabindex="0">
       <div class="nested-tabs" id="certifications-tabs">
+    
+        <!-- Tab Buttons -->
         <div class="tab-buttons" role="tablist" aria-label="Certification tabs">
-          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="cert-csm" id="tab-cert-csm" data-tab="cert-csm">Certified ScrumMaster</button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="cert-acadium" id="tab-cert-acadium" data-tab="cert-acadium">Digital Marketing Apprentice</button>
+          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="cert-csm" id="tab-btn-csm" data-tab="cert-csm">
+            Certified ScrumMaster
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="cert-acadium" id="tab-btn-acadium" data-tab="cert-acadium">
+            Digital Marketing Apprentice
+          </button>
         </div>
-
-        <div id="cert-csm" class="tab-content active" role="tabpanel" aria-labelledby="tab-cert-csm" tabindex="0">
+    
+        <!-- Tab Contents -->
+        <div id="cert-csm" class="tab-content active" role="tabpanel" aria-labelledby="tab-btn-csm">
           <h3>Certified ScrumMaster (CSM)</h3>
           <p>Issued by Scrum Alliance – Demonstrates expertise in Agile project management and scrum principles.</p>
+          <embed src="assets/certificates/csm.pdf#toolbar=0&navpanes=0&scrollbar=0"
+            type="application/pdf"
+            width="80%"
+            height="500px">
         </div>
-        <div id="cert-acadium" class="tab-content" role="tabpanel" aria-labelledby="tab-cert-acadium" tabindex="0">
+    
+        <div id="cert-acadium" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-acadium">
           <h3>Digital Marketing Apprentice – Acadium</h3>
           <p>Specialized in SEO, content strategy, and ad copywriting using AI-driven tools.</p>
+          <embed src="assets/certificates/acadium.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          type="application/pdf"
+          width="64%"
+          height="370px">
         </div>
+    
       </div>
     </section>
+    
+
     
     <!-- Volunteer with nested tabs -->
     <section id="volunteer" class="tab-content" role="tabpanel" aria-labelledby="tab-volunteer" tabindex="0">
